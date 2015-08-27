@@ -1,6 +1,6 @@
 html {
-		font-family: 'Anton', helvetica, sans-serif;
-		/*font-family: 'Pathway Gothic One', helvetica, sans-serif;*/
+		/*font-family: 'Anton', helvetica, sans-serif;*/
+		font-family: 'Pathway Gothic One', helvetica, sans-serif;
 		font-weight: bold;
 }
 
@@ -10,31 +10,39 @@ body {
 	margin: 0 auto;
 }
 
+ul li {
+	display: inline;
+}
+
 h1 {
 	font-size: 10rem;
 	padding: 7% 20% 12% 20%; 
 	text-align: center;
+	color: #333;
 }
 
 h2 {
 	font-size: 8rem;
 	text-align: center;
-	padding-bottom: 1%
+	padding-bottom: 1%;
+	color: #333;
 }
 
 h3 {
 	font-size: 2.9rem;
 	text-align: center;
 	padding-bottom: 3%;
+	color: #333;
 }
 
 h4 {
 	font-size: 2.8rem;
 	text-align: center;
 	padding: 1.5% 0% 1.5% 0%;
+	color: #333;
 }
 
-.header-border {
+/*.header-border {
   display: block;
   width: 100%;
   height: 10px;
@@ -43,26 +51,43 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  justify-content: flex-end;
   margin: 0 auto;
-}
+}*/
+
 .header {
   display: block;
   width: 100%;
   height: 60px;
   background-color: #888;
-  z-index: 1;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  justify-content: flex-end;
-  margin: 0 auto;
+/*  flex-direction: row;*/
+  /*flex-wrap: nowrap;*/
+/*  margin: 0 auto;*/
+/*  position: fixed;*/
+/*  z-index: 1;*/
+
+}
+
+.bar {
+	padding: 24px 24px 24px 24px;
+	font-family: helvetica, sans-serif;
+	background-color: #555;
+	color: white;
+	text-align: center;
+	display: inline;
+}
+
+.bar ul li {
+	padding: .2em 1em;
+}
+
+.bar2 {
+	padding: 24px 24px 24px 24px;
+	font-family: helvetica, sans-serif;
+	text-align: center;
+	background-color: #555;
+	color: white;
+	flex-grow: 1;
 }
 
 .contact-button {
@@ -72,7 +97,7 @@ h4 {
 	background-color: #FF5B00;
 	color:white;
 	text-decoration: none;
-	justify-content: flex-end;
+
 }
 
 .contact-button:hover {
